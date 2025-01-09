@@ -216,10 +216,27 @@ a {
   font-size: 1.5rem;
 }
 
+.product-card {
+  height: 100%;
+  overflow: hidden; 
+}
+
+.product-card:hover {
+  transition: transform 0.8s ease, box-shadow 0.5s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
 .product-card img {
   object-fit: contain;
 }
 
+.product-card img {
+  transition: transform 0.8s ease, box-shadow 0.5s ease; /* Smooth transition for scale and shadow */
+}
+
+.product-card:hover img {
+  transform: scale(1.1); /* Zoom in the image */
+}
 .carousel-indicators .active img {
   border: 2px solid #d5202e;
 }
@@ -1902,4 +1919,28 @@ a.btn-link.text-light:after {
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
   background: #c2c9d2;
+}
+
+
+
+#back-to-up{
+  z-index: 999;
+}
+
+
+/* Product Details css  */
+/* Ensure the carousel container prevents overflow */
+.carousel-inner {
+  overflow: hidden;
+  border-radius: 8px; /* Optional: rounded corners for a sleek look */
+}
+
+/* Smooth zoom-in effect for images */
+.carousel-inner img {
+  transition: transform 0.8s ease, box-shadow 0.5s ease; /* Smooth transition */
+  will-change: transform;
+}
+
+.carousel-inner:hover img {
+  transform: scale(1.5); /* Slight zoom-in effect on hover */
 }
