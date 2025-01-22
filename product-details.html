@@ -155,11 +155,11 @@
   </svg>
 
   <header class="position-relative">
-    <div class="position-fixed top-0 w-100 shadow py-3" style="z-index: 999; background-color: rgba(0, 0, 0, 0.60);">
+    <div class="position-fixed top-0 w-100 shadow py-2" style="z-index: 999; background-color: rgba(0, 0, 0, 0.60);">
       <nav class="navbar navbar-expand-lg text-uppercase fs-6 p-2 align-items-center">
         <div class="container-fluid">
-          <div class="row justify-content-between align-items-center w-100">
-            <div class="col-4 col-md-2">
+          <div class="row justify-content-between align-items-center w-100 mx-auto">
+            <div class="col-4 col-lg-2">
               <a class="navbar-brand text-white" href="index.html">
                 <img src="images/reliant-fashion-logo-300x103.png" class="img-fluid" alt="">
               </a>
@@ -193,25 +193,84 @@
                       <a class="nav-link" href="about.html">About Us</a>
                     </li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="products.html" id="dropdownShop"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
-                      <ul class="dropdown-menu list-unstyled" aria-labelledby="dropdownShop">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" aria-expanded="false">
+                        Products
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="products.html">Ladis Home Wear</a></li>
                         <li>
-                          <a href="products.html" class="dropdown-item item-anchor">All Product</a>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="products.html">Blazer</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="products.html">Women's Dress</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropend">
+                          <a class="dropdown-item dropdown-toggle" href="products.html" role="button"
+                            data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Kid's Clothes
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html">Baby Rompar</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="products.html">Shirts</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="products.html">Shorts</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="products.html">Polo</a></li>
+                          </ul>
                         </li>
                         <li>
-                          <a href="products.html" class="dropdown-item item-anchor">Women's Clothes</a>
+                          <hr class="dropdown-divider">
                         </li>
-                        <li>
-                          <a href="products.html" class="dropdown-item item-anchor">Men's Clothes</a>
+                        <li class="dropend">
+                          <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            data-bs-auto-close="true" aria-expanded="false">
+                            Men's Clothes
+                          </a>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">T-Shart</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Shirts</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Jackets</a></li>
+                            <li>
+                              <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Polo</a></li>
+                          </ul>
                         </li>
                       </ul>
                     </li>
 
-                    <li class="nav-item">
-                      <a href="product-details.html" class="nav-link">Product Details </a>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle btn" href="#" role="button" data-bs-toggle="dropdown"
+                        data-bs-auto-close="outside" aria-expanded="false">
+                        Download Profile
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Company Profile</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="product-profile.html">Product Profile</a></li>
+                      </ul>
                     </li>
-
                     <li class="nav-item">
                       <a class="nav-link" href="contact.html">Contact</a>
                     </li>
@@ -220,7 +279,7 @@
               </div>
             </div>
 
-            <div class="col-4 col-md-2">
+            <div class="col-4 col-lg-2 justify-content-end align-items-end text-end">
               <div class="dropdown text-end" tab-index="0">
                 <button id="dropdown-btn"></button>
                 <ul class="dropdown-content" id="dropdown-content"></ul>
@@ -367,7 +426,7 @@
       <div class="container">
         <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
           <h4 class="text-uppercase">You May Also Like</h4>
-          <a href="index.html" class="btn-link">View All Products</a>
+          <a href="products.html" class="btn-link">View All Products</a>
         </div>
         <div class="swiper product-swiper open-up" data-aos="zoom-out">
           <div class="swiper-wrapper d-flex">
